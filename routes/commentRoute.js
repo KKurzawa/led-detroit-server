@@ -18,7 +18,6 @@ router.route("/create").post((req, res) => {
 
 router.route("/comments").get((req, res) => {
     Comment.find()
-
         .then(foundComments => res.json(foundComments))
 })
 
